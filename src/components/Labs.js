@@ -1,9 +1,20 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
-const labs = () => {
+const Labs = () => {
+  const navigate= useNavigate();
+  function clickhandler(){
+    navigate("/About");
+  }
   return (
-    <div>labs</div>
+
+    <div>
+
+      <div>labs</div>
+      <button onClick={clickhandler}>move to about page</button>
+
+    </div>
   )
 }
 
-export default labs
+export default Labs

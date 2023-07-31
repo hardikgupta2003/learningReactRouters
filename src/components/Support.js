@@ -1,9 +1,18 @@
 import React from 'react'
-
-const support = () => {
+import { useNavigate } from 'react-router-dom'
+const Support = () => {
+  const navigate= useNavigate();
+  function clickhandler(){
+    navigate("/");
+  }
   return (
-    <div>support</div>
+    <div>
+
+    <div>labs</div>
+    <button onClick={clickhandler}>move to home page</button>
+
+  </div>
   )
 }
 
-export default support
+export default Support

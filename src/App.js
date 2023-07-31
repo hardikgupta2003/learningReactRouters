@@ -1,10 +1,10 @@
-import { Route , Routes } from 'react-router-dom';
+import { NavLink, Route , Routes } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home' ;
 import About from './components/About' ;
 import Labs from './components/Labs' ;
 import Support from './components/Support' ;
-import { Link } from 'react-router-dom';
+
 
 
 
@@ -15,10 +15,10 @@ function App() {
     <div className="App">
       
       <ul>
-       <Link to={"/"}> <li> home</li></Link>
-        <Link to={"/about"}><li>about</li></Link>
-        <Link to={"/support"}><li>support</li></Link>
-        <Link to={"/labs"}><li>labs</li></Link>
+       <NavLink to={"/"}> <li> home</li></NavLink>
+        <NavLink to={"/about"}><li>about</li></NavLink>
+        <NavLink to={"/support"}><li>support</li></NavLink>
+        <NavLink to={"/labs"}><li>labs</li></NavLink>
       </ul>
 
       <Routes>
